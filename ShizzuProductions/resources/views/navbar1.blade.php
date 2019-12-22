@@ -58,15 +58,15 @@
                         Home</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="index#portfolio" aria-expanded="true">Portfolio<br></a><a class="text-white dropdown-item display-4" href="index#contact" aria-expanded="false">Contact Us</a></div></li>
                         <li class="nav-item"><a class="nav-link link text-white display-4" href="videos">Videos</a></li>
                         <li class="nav-item"><a class="nav-link link text-white display-4" href="achs">Achievments</a></li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="reg">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="register">Registration</a></li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="#">
-                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                        About Us
+                        <span class=""></span>
+                        
                     </a>
                 </li></ul>
             <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="login"><span class="mbri-login mbr-iconfont mbr-iconfont-btn"></span>
-                    Sign In</a></div>
+                    Audition</a></div>
         </div>
     </nav>
 </section>

@@ -1,5 +1,5 @@
 <?php
-
+use App\ReadFeedback;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,15 +15,40 @@ Route::get('index', function () {
     return view('index');
 });
 
+Route::get('auditionform', function () {
+    return view('Auditionform');
+});
+
+Route::get('admincontact', function () {
+    return view('admincontact');
+});
+Route::get('/read','FeedbackController@read');
 route::get('videos','PagesController@getvideos');
 
 route::get('achs','PagesController@getachs');
 
 route::get('reg','PagesController@getreg');
 
-route::get('login','PagesController@getlogin');
+Route::get('signin','PagesController@getsignin');
 
+Route::get('admin','PagesController@getadmin');
 
+Route::get('adform','PagesController@getadform');
+
+Route::post('feedback', 'FeedbackController@submit');
+
+Route::POST('order', 'AudiController@order');
+
+Route::get('/readfeedback',function()
+{
+        $read=feedback::all();
+
+       foreach($read as $feedback) 
+        {
+                return $feedback->name;
+
+        }
+});
 
 
 Route:: get('insert',function() {
@@ -33,8 +58,12 @@ Route:: get('insert',function() {
 
 Route::get('/footer', function () {
     return view('footer');
+
+
 });
 
+
+route ::get('/feedback','Feedbackadmin@getfeedback');
 
 
 
@@ -62,4 +91,12 @@ Route ::get('/delete', function() {
     $deleted=DB::delete('delete from regusers where id =?', [1]);
     return deleted;
 
-});*/
+});
+//Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+*/
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

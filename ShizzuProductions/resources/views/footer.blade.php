@@ -51,7 +51,7 @@
 <div class="widget no-box">
 <h5 class="widget-title">Get Started<span></span></h5>
 <p>Get access to your full Training and Vlogs</p>
-<a class="btn btn-sm btn-primary display-4" href="reg" target="_blank">Register Now</a>
+<a class="btn btn-sm btn-primary display-4" href="auth/register" target="_blank">Register Now</a>
 </div>
 </div>
 

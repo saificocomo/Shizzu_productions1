@@ -33,7 +33,15 @@
             </div>
             <div class="col-md-9 col-sm-12" >
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WonMzcw1uFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <form action="">
+                  <div class="form-group">
+                  <textarea class="form-control" name="comment" rows="3" data-rule="required" data-msg="Please write something for us" placeholder="Comment"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <button type="submit" class="btn btn-sm btn-primary display-4">Comment</button>
+              </form>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/iCBw1Xq_pTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/FvvdmgJxSIE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/e9JeTDfBYzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Zu5kkC0i30E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>

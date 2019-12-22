@@ -46,15 +46,16 @@
 					<p><span>Shizzu Productions</span></p>
 				</div>
 			</div>
-			<form class="form-detail" action="#" method="post" id="myform">
+			<form class="form-detail" action="{{ route('register') }}" method="POST" id="myform">
+			{{ csrf_field() }}
 				<h2>Registration Form</h2>
 				<div class="form-row">
 					<label for="full-name">Full Name:</label>
-					<input type="text" name="full_name" id="full_name" class="input-text" placeholder="ex: Lindsey Wilson">
+					<input type="text" name="name" id="full_name" class="input-text" placeholder="ex: Lindsey Wilson">
 				</div>
 				<div class="form-row">
 					<label for="your_email">Your Email:</label>
-					<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+					<input type="text" name="email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
 				</div>
 				<div class="form-row">
 					<label for="password">Password:</label>
@@ -62,7 +63,7 @@
 				</div>
 				<div class="form-row">
 					<label for="comfirm-password">Confirm Password:</label>
-					<input type="password" name="confirm_password" id="confirm_password" class="input-text" required>
+					<input type="password" name="password" id="confirm_password" class="input-text" required>
 				</div>
 				<div class="form-checkbox">
 					<label class="container"><p>By signing up, you agree to the <a href="#" class="text">Play Term of Service</a></p>
@@ -74,7 +75,7 @@
 					<input type="submit" name="register" class="register" value="Register">
 				</div>
 				
-				<div class="or">OR</div>
+				
 			</form>
 		</div>
 	</div>
@@ -115,15 +116,7 @@
 		});
 	</script>
 
-				<div class="right">
-					<span class="loginwith">Sign in with<br />social network</span>
-					<a href="https://www.facebook.com">
-					<button class="social-signin facebook">Log in with facebook</button></a>
-					<a href="https://www.twitter.com">
-					<button class="social-signin twitter">Log in with Twitter</button></a>
-					<a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm%26ogbl&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
-					<button class="social-signin google">Log in with Google+</button></a>
-				  </div>
+				
 	
 </body>
 </html>

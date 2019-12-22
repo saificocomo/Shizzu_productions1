@@ -21,8 +21,17 @@ class PagesController extends Controller
         return view('regform');
     }
 
-    public function getlogin()
+    public function getsignin()
     {
-        return view('login');
+        return view('signin');
+    }
+    public function getadmin()
+    {
+        return view('admin');
+
+    }
+    public function getadform()
+    {
+        return view('auditionform');
     }
 }
